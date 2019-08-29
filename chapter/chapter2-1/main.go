@@ -12,7 +12,7 @@ import (
 // @File    : chapter2-1.go
 
 func main() {
-	cmd := exec.Command("bash")
+	cmd := exec.Command("sh")
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Cloneflags: syscall.CLONE_NEWUTS | syscall.CLONE_NEWIPC,
 	}
